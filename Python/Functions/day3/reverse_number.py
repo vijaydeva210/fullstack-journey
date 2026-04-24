@@ -1,6 +1,7 @@
-def reverse(num):
+def reversedd(num):
     try:
-        num=abs(num)
+        if num.isdigit()==True:
+            num=abs(num)
         rev=0
         while num>0:
             r=num%10
@@ -8,7 +9,8 @@ def reverse(num):
             num//=10
         return rev
     except ValueError:
-        print('Enter a valid number')
-print(reverse(341))
-print(reverse(1234))
-print(reverse(4321))
+        return'Enter a valid number'
+print(reversedd(341))
+print(reversedd(1234))
+print(reversedd(4321))
+print(reversedd(an))
