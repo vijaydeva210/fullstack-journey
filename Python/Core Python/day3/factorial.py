@@ -2,7 +2,7 @@ try:
     num=int(input('enter a number: '))
     fact=1
     if num==0:
-        print(fact)
+        print(1)
     elif num<0:
         print('Negative numbers are not allowed')
     else:
