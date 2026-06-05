@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label for="">
+            <input type="checkbox" value="orange" class="fruits">
+            Orange
+        </label><br><br>
+        <label for="">
+            <input type="checkbox" value="watermelon" class="fruits">
+            Watermelon
+        </label><br><br>
+        <label for="">
+            <input type="checkbox" value="apple" class="fruits">
+            Apple
+        </label><br><br>
+        <label for="">
+            <input type="checkbox" value="mango" class="fruits">
+            Mango
+        </label><br><br>
+        <button id="button">Add</button>
+        <p id="text"></p>
+        <script>
+            document.querySelector('#button').addEventListener('click',addtocart);
+            function addtocart(){
+                let output=document.querySelectorAll('.fruits')
+                let selected='';
+                for(box of output){
+                    if(box.checked==true){
+                        selected+=box.value+' ';
+                        box.draggable=true;
+                    }
+                }
+                document.querySelector('#text').innerText=selected
+            }
+        </script>
+    </body>
+</html>

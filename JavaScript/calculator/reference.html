@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dashboard</title>
+        <style>
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                grid-template-rows: 10vh 1fr 5vh;
+                grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            }
+            .container header{
+                grid-area:header;
+                border: 2px solid blue;
+                text-align: center;
+                background-color: blue;
+            }
+            .container aside{
+                grid-area:sidebar;
+                border: 2px solid blue;
+            }
+            .container main{
+                grid-area:main;
+                border: 2px solid blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container footer{
+                grid-area:footer;
+                border: 2px solid blue;
+                text-align: center;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                border: 2px solid blue;
+            }
+            .container main .calci{
+                width: 30vw;
+                height: 60vh;
+                box-sizing: border-box;
+            }
+            .container main .calci .display input{
+                width: 100%;
+                height: 8vh;
+                box-sizing: border-box;
+                border: 2px solid black;
+            }
+            .container main .calci .buttons{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .container main .calci .buttons button{
+                height: 6vh;
+            }
+            .container main .calci .buttons button:hover{
+                background-color: aqua;
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+            .container main .calci .buttons button:active{
+                background-color: blue;
+                font-size: small;
+            }
+            .container main .calci .display input:hover{
+                color: black;
+                background-color: beige;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>VD application</h1>
+            </header>
+            <aside>
+                <ul>
+                    <li>Home</li>
+                    <li>Settings</li>
+                    <li>Info</li>
+                    <li>Update</li>
+                    <li>Delete</li>
+                </ul>
+            </aside>
+            <main>
+                <div class="calci">
+                    <div class="display">
+                        <input type="text">
+                    </div>
+                    <div class="buttons">
+                        <button><p>1</p></button>
+                        <button><p>2</p></button>
+                        <button><p>3</p></button>
+                        <button><p>4</p></button>
+                        <button><p>5</p></button>
+                        <button><p>6</p></button>
+                        <button><p>7</p></button>
+                        <button><p>8</p></button>
+                        <button><p>9</p></button>
+                        <button><p>0</p></button>
+                        <button><p>+</p></button>
+                        <button><p>-</p></button>
+                        <button><p>*</p></button>
+                        <button><p>%</p></button>
+                        <button><p>DEL</p></button>
+                        <button><p>AC</p></button>
+                        <button><p>=</p></button>
+
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <h3>&copy;VDsolutions</h3>
+            </footer>
+        </div>
+    </body>
+</html>

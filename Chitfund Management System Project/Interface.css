@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 99vw;
+    height: 99vh;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 10vh 1fr 8vh;
+    grid-template-areas: 
+    "heading heading"
+    "sidebar mainpage"
+    "footer footer";
+}
+.container .heading{
+    grid-area: heading;
+    background-color: rgb(43, 58, 219);
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .sidebar{
+    grid-area:sidebar;
+    
+}
+.container .mainpage{
+    grid-area:mainpage;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .footer{
+    grid-area:footer;
+    margin-left: 45vw;
+}
+.container .heading h1:hover{
+    color:antiquewhite;
+}
+.container .sidebar ul li{
+    margin-top:2vh;
+}
+.container .sidebar ul li button{
+    width: 90%;
+    height: 6vh;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 1vw;
+}
+.container .sidebar ul li button:hover{
+    width: 100%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.container .sidebar ul li button:active{
+    width: 100%;
+    border: 4px solid rgb(206, 206, 9);
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}

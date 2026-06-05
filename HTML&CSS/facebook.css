@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.left{
+    width: 54vw;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+}
+.right{
+    width: 45vw;
+    height: 100vh;
+    float: right;
+    box-sizing: border-box;
+}
+.left .word{
+    width: 12vw;
+    height: 8vh;
+    position: fixed;
+    top: 50vh;
+    left: 4vw;
+
+}
+.left .word p{
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.left .word p strong{
+    color: blue;
+}
+.left .img1{
+    width: 15vw;
+    height: 50vh;
+    position: fixed;
+    top: 23vh;
+    left: 30vw;
+    z-index: 2;
+}
+
+
+.left .img2{
+
+    width: 15vw;
+    height: 35vh;
+    position: fixed;
+    top: 32vh;
+    left: 20vw;
+    z-index: 1;
+}
+
+
+.left .img3{
+ 
+    width: 15vw;
+    height: 25vh;
+    position: fixed;
+    top: 57vh;
+    left: 23vw;
+    z-index: 3;
+}
+.left .img4{
+    width: 5vw;
+    position: fixed;
+}
+.left .img5{
+    position: fixed;
+    width: 5vw;
+    top: 20vh;
+    left: 21vw;
+}
+
+
+.left .img1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.left .img2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.left .img3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.left .img4 img{
+    width: 100%;
+    margin: 2vw;
+}
+.right{
+    border-left: 1px solid gray;
+}
+.right .space{
+    width: 40vw;
+    height: 80vh;
+    position: fixed;
+    right:2vw;
+    top: 18vh;
+}
+.right .space .fb{
+    font-weight: bold;
+    margin-top: 5vh;
+}
+.right .space .textbox input[type=text]{
+    margin-top: 4vh;
+    width: 100%;
+    height: 8vh;
+    border-radius: 10px;
+    border: 2px solid rgba(162, 162, 167, 0.5);
+    color:rgb(119, 119, 126);
+}
+.right .space .button input[type=button]{
+    margin-top: 3vh;
+    width: 100%;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.right .space .forgot input[type=button]{
+    margin-top: 3vh;
+    font-weight: bold;
+    width: 100%;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+.right .space .forgot input[type=button]:hover{
+    background-color: rgb(201, 199, 199);
+}
+.right .space .create input[type=button]{
+    margin-top: 3vh;
+    font-weight: bold;
+    width: 100%;
+    height: 6vh;
+    border-radius: 15px;
+    border: 2px solid rgba(7, 7, 211,0.5);
+    background-color: white;
+    color: blue;
+}
+.right .space .create input[type=button]:hover{
+    background-color: rgb(219, 219, 244);
+}

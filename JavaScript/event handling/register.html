@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+            #form{
+                width: 80vw;
+                height: 40vh;
+            }
+            #form #uname{
+                width: 50%;
+                height: 5vh;
+                margin-bottom: 4vh;
+                border: 2px solid blue;
+                border-radius: 10px;
+            }
+            #form #pass{
+                width: 50%;
+                height: 5vh;
+                margin-left: 4px;
+                border: 2px solid blue;
+                border-radius: 10px;
+            }
+            #form input[type=submit]{
+                width: 15vw;
+                height: 5vh;
+                margin-left: 34.3vw;
+                background-color: rgba(63, 175, 239, 0.5);
+                border-radius: 10px;
+            }
+            #form input[type=submit]:hover{
+                font-size: large;
+                font-weight: bolder;
+                color: aqua;
+                background-color: aliceblue;
+                
+            }
+            #form input[type=submit]:active{
+                color: red;
+                font-weight: bolder;
+                font-size: x-large;
+            }
+            #form p{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://www.Google.com" id="form">
+            <label for="">
+                Username
+                <input type="text" id="uname">
+                <p id="unameerr"></p>
+            </label>
+            <label for="">
+                Password
+                <input type="text" id="pass">
+                <p id="psderr"></p>
+            </label><br>
+            <input type="submit" >
+            <script src="register_script.js"></script>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 10vh 1fr 5vh;
+    grid-template-areas:"header header"
+                        "sidebar main"
+                        "footer footer";
+}
+.heading{
+    background-color: blue;
+    color: white;
+    grid-area:header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: antiquewhite;
+}
+.main{
+    grid-area: main;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .box input[type=text]{
+    margin-top: 2vh;
+    height: 6vh;
+    width: 40vw;
+    font-size:large;
+    background-color: antiquewhite;
+    font-style: oblique;
+}
+.main .box input[type=button]{
+    height: 6vh;
+}
+.main .box input[type=button]:hover{
+    background-color: blue;
+    color: white;
+    font-weight:bolder;
+}
+.main .box input[type=button]:active{
+    font-size: x-large;
+}
+.main .list{
+    width: 42vw;
+    height: 50vw;
+    font-style: italic;    
+    font-size: large;
+}
+.sidebar ul li{
+    margin-top: 2vh;
+    list-style-type: none;
+}
+.sidebar ul li:hover{
+    font-size: large;
+    font-weight: bold;
+    
+}

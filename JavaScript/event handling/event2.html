@@ -1,0 +1,22 @@
+<!DOCTYPE htnml>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est numquam vitae soluta molestias repellendus, quis consectetur qui modi accusamus consequuntur incidunt sit! Obcaecati culpa deleniti sequi. Est iure accusantium dolore.</p>
+        <select name="" id="opt">
+            <option value="red">RED</option>
+            <option value="green">GREEN</option>
+            <option value="blue">BLUE</option>
+            <option value="orange">ORANGE</option>
+        </select>
+        <script>
+            document.querySelector('#opt').addEventListener('change',changecolor);
+            function changecolor(event){
+                let p_tag=document.querySelector('#p1');
+                p_tag.style.color=event.target.value;
+            }
+        </script>
+    </body>
+</html>
